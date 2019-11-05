@@ -1,0 +1,18 @@
+<fieldset>
+  <legend>angular-l10n</legend>
+  <h1 l10nTranslate [params]="{name: 'angular-l10n'}">hello</h1>
+
+  <p l10nTranslate>greeting</p>
+
+  <p l10n-title title="subtitle.title" l10nTranslate>subtitle.text</p>
+</fieldset>
+
+
+<fieldset>
+  <legend>@ngneat/transloco</legend>
+  <h1 transloco="hello" [translocoParams]="{name: 'transloco'}"></h1>
+
+  <p transloco="greeting"></p>
+
+  <p [attr.title]="'subtitle.title' | transloco" transloco="subtitle.text"></p>
+</fieldset>
